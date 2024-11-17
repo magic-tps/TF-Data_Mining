@@ -18,11 +18,11 @@ model_choice = st.selectbox(
 
 # Crear campos para ingresar valores de las características
 st.header("Ingrese los valores de las características")
-feature_1 = st.number_input("Feature 1 (ejemplo: Tiempo desde última transacción)", value=0.0)
-feature_2 = st.number_input("Feature 2 (ejemplo: Distancia al comercio)", value=0.0)
-feature_3 = st.number_input("Feature 3 (ejemplo: Edad del cliente)", value=0.0)
-feature_4 = st.number_input("Feature 4 (ejemplo: Monto de la transacción)", value=0.0)
-feature_5 = st.number_input("Feature 5 (ejemplo: Tasa de fraude del comercio)", value=0.0)
+feature_1 = st.number_input("Feature 1 : Transaction Hour", value=0.0)
+feature_2 = st.number_input("Feature 2 : Age", value=0.0)
+feature_3 = st.number_input("Feature 3 : Time Since Last Trans", value=0.0)
+feature_4 = st.number_input("Feature 4 : Merchant Fraud Ratio", value=0.0)
+feature_5 = st.number_input("Feature 5 : Distance", value=0.0)
 
 # Organizar los valores ingresados en un array para la predicción
 features = np.array([[feature_1, feature_2, feature_3, feature_4, feature_5]])
