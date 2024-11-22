@@ -18,7 +18,7 @@ model_choice = st.selectbox(
 
 # Crear campos para ingresar valores de las características
 st.header("Ingrese los valores de las características")
-feature_1 = st.number_input("Feature 1 : Transaction Hour", value=0.0)
+feature_1 = st.number_input("Feature 1 : Transaction", value=0.0)
 feature_2 = st.number_input("Feature 2 : Age", value=0.0)
 feature_3 = st.number_input("Feature 3 : Time Since Last Trans", value=0.0)
 feature_4 = st.number_input("Feature 4 : Merchant Fraud Ratio", value=0.0)
